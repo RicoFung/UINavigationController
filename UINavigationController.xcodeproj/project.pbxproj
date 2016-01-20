@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		71E634FD1C4F817A00B52FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E634FC1C4F817A00B52FB3 /* main.m */; };
 		71E635001C4F817A00B52FB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E634FF1C4F817A00B52FB3 /* AppDelegate.m */; };
-		71E635031C4F817A00B52FB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E635021C4F817A00B52FB3 /* ViewController.m */; };
+		71E635031C4F817A00B52FB3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E635021C4F817A00B52FB3 /* RootViewController.m */; };
 		71E635061C4F817A00B52FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E635041C4F817A00B52FB3 /* Main.storyboard */; };
 		71E635081C4F817A00B52FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E635071C4F817A00B52FB3 /* Assets.xcassets */; };
 		71E6350B1C4F817A00B52FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E635091C4F817A00B52FB3 /* LaunchScreen.storyboard */; };
 		71E635161C4F817A00B52FB3 /* UINavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E635151C4F817A00B52FB3 /* UINavigationControllerTests.m */; };
 		71E635211C4F817A00B52FB3 /* UINavigationControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E635201C4F817A00B52FB3 /* UINavigationControllerUITests.m */; };
+		71E635351C4F8C3700B52FB3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E635341C4F8C3700B52FB3 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,8 @@
 		71E634FC1C4F817A00B52FB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71E634FE1C4F817A00B52FB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71E634FF1C4F817A00B52FB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		71E635011C4F817A00B52FB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		71E635021C4F817A00B52FB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		71E635011C4F817A00B52FB3 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		71E635021C4F817A00B52FB3 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		71E635051C4F817A00B52FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71E635071C4F817A00B52FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71E6350A1C4F817A00B52FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,8 @@
 		71E6351C1C4F817A00B52FB3 /* UINavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UINavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E635201C4F817A00B52FB3 /* UINavigationControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerUITests.m; sourceTree = "<group>"; };
 		71E635221C4F817A00B52FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E635331C4F8C3700B52FB3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		71E635341C4F8C3700B52FB3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +106,10 @@
 			children = (
 				71E634FE1C4F817A00B52FB3 /* AppDelegate.h */,
 				71E634FF1C4F817A00B52FB3 /* AppDelegate.m */,
-				71E635011C4F817A00B52FB3 /* ViewController.h */,
-				71E635021C4F817A00B52FB3 /* ViewController.m */,
+				71E635011C4F817A00B52FB3 /* RootViewController.h */,
+				71E635021C4F817A00B52FB3 /* RootViewController.m */,
+				71E635331C4F8C3700B52FB3 /* DetailViewController.h */,
+				71E635341C4F8C3700B52FB3 /* DetailViewController.m */,
 				71E635041C4F817A00B52FB3 /* Main.storyboard */,
 				71E635071C4F817A00B52FB3 /* Assets.xcassets */,
 				71E635091C4F817A00B52FB3 /* LaunchScreen.storyboard */,
@@ -273,9 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E635031C4F817A00B52FB3 /* ViewController.m in Sources */,
+				71E635031C4F817A00B52FB3 /* RootViewController.m in Sources */,
 				71E635001C4F817A00B52FB3 /* AppDelegate.m in Sources */,
 				71E634FD1C4F817A00B52FB3 /* main.m in Sources */,
+				71E635351C4F8C3700B52FB3 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +507,7 @@
 				71E635271C4F817A00B52FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71E635281C4F817A00B52FB3 /* Build configuration list for PBXNativeTarget "UINavigationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +516,7 @@
 				71E6352A1C4F817A00B52FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71E6352B1C4F817A00B52FB3 /* Build configuration list for PBXNativeTarget "UINavigationControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +525,7 @@
 				71E6352D1C4F817A00B52FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

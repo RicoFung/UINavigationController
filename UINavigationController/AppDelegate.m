@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+#import "DetailViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //1.创建根视图控制器
+    _mRootViewController = [[RootViewController alloc] init];
+    //2.创建导航视图控制器，被管理对象为mRootViewController
+    _mUINavigationController = [[UINavigationController alloc] initWithRootViewController:_mRootViewController];
+    //3.为window指定根视图控制器对象为mNavigationController
+    self.window.rootViewController = _mUINavigationController;
+    
     return YES;
 }
 
@@ -40,6 +48,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (void)selectRightAction:(id)sender {
+    [_mUINavigationController pushViewController:[[DetailViewController alloc]init] animated:YES];
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailViewController.h
 //  UINavigationController
 //
 //  Created by mac373 on 16/1/20.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface DetailViewController : UIViewController
+@property UIView* mUIView;
+@property UILabel* mUILabel;
 @end
-
